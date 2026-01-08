@@ -1,0 +1,138 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: #22223b;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #3a3a5a;
+  font-weight: 600;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(60, 60, 120, 0.08);
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+.table {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(60, 60, 120, 0.06);
+}
+
+.table th {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+  padding: 0.75rem 1rem;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f1f5f9;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  border: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #60a5fa 0%, #6366f1 100%);
+}
+
+.btn-secondary {
+  background: #e0e7ff;
+  color: #3730a3;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background: #c7d2fe;
+  color: #3730a3;
+}
+
+input.form-control, select.form-control, textarea.form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #c7d2fe;
+  box-shadow: none;
+  transition: border-color 0.2s;
+}
+
+input.form-control:focus, select.form-control:focus, textarea.form-control:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #3730a3;
+}
+
+img {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(60, 60, 120, 0.10);
+}
+
+footer.footer {
+  background: #6366f1;
+  color: #fff;
+  border-top: none;
+  box-shadow: 0 -2px 8px rgba(60, 60, 120, 0.06);
+}
+
+footer.footer a {
+  color: #e0e7ff;
+  text-decoration: underline;
+}
+
+/* Add spacing to forms */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .table th, .table td {
+    padding: 0.5rem;
+  }
+  .card {
+    padding: 0.5rem;
+  }
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
